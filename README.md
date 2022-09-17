@@ -1,24 +1,39 @@
-# README
+# Blog app
+The Blog app is a typical blog website. It shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
+- Ruby
+- Ruby on rails
 
-Things you may want to cover:
+## See Project 🌐
 
-* Ruby version
+## Getting Started
+You may setup the project on your local machine using the following steps:
 
-* System dependencies
+- Open the terminal
+- Get into the directory you want this folder to appear
+- Type 'git clone https://github.com/Draxeytina/Blog.git'
+- Open index.html file and open it with live server in your preferred editor
 
-* Configuration
+Optionally you can follow the link under see project above ☝️
 
-* Database creation
+## Author 🖋️
+👤 Tinashe Timothy Murambinda
+* <a href="https://github.com/Draxeytina/">Github</a>
+* <a href="https://twitter.com/tinamura2">Twitter</a>
+* <a href="https://www.linkedin.com/in/timothy-tinashe-murambinda/">LinkedIn</a>
 
-* Database initialization
+## Contributing
+You are welcome to make any contributions, issues, and feature requests!
 
-* How to run the test suite
+## Show your support
+If you like this project please give a ⭐️!
 
-* Services (job queues, cache servers, search engines, etc.)
+## Acknowledgments
+I would like to acknowledge the following for making this a success:
+- My coding partners
+- The Microverse code reviewers
 
-* Deployment instructions
+## 📝 License
 
-* ...
+This project is [MIT](https://github.com/Draxeytina/Blog/MIT.md) licensed.
