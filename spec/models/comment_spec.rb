@@ -10,7 +10,7 @@ RSpec.describe Comment, type: :model do
     )
 
     post = Post.new(
-      author: author,
+      author:,
       title: 'Hello',
       text: 'This is my first post',
       comments_counter: 0,
@@ -19,15 +19,14 @@ RSpec.describe Comment, type: :model do
 
     Comment.create(
       text: 'comment',
-      post: post,
-      author: author
+      post:,
+      author:
     )
   end
 
   describe 'Comments' do
-  it 'should update comments counter' do
-    expect(subject.send(:comment_counter)).to be_truthy
+    it 'should update comments counter' do
+      expect(subject.send(:comment_counter)).to be_truthy
+    end
   end
-end
-
 end

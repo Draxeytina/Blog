@@ -28,5 +28,5 @@
     ],
     "csstree/validator": true
   },
-  "ignoreFiles": ["build/**", "dist/**", "tmp/**", "test/**", "db/**", "app/**", "bin/**", "log/**", "public/**", "config/**", "**/reset*.css", "**/bootstrap*.css", "**.json", "**.lock", "**.rb", "**.erb", "Gemfile"]
+  "ignoreFiles": ["build/**", "dist/**", "tmp/**", "spec/**", "test/**", "db/**", "app/**", "bin/**", "log/**", "public/**", "config/**", "**/reset*.css", "**/bootstrap*.css", "**.json", "**.lock", "**.rb", "**.erb", "Gemfile"]
 }

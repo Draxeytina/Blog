@@ -10,7 +10,7 @@ RSpec.describe Like, type: :model do
     )
 
     post = Post.new(
-      author: author,
+      author:,
       title: 'Hello',
       text: 'This is my first post',
       comments_counter: 0,
@@ -18,15 +18,14 @@ RSpec.describe Like, type: :model do
     )
 
     Like.create(
-      post: post,
-      author: author
+      post:,
+      author:
     )
   end
 
   describe 'Likes' do
-  it 'should update likes counter' do
-    expect(subject.send(:update_likes_counter)).to be_valid
+    it 'should update likes counter' do
+      expect(subject.send(:update_likes_counter)).to be_valid
+    end
   end
-end
-
 end

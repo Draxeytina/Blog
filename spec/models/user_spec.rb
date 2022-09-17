@@ -14,13 +14,13 @@ RSpec.describe User, type: :model do
 
   describe 'user' do
     it 'should have name' do
-        subject.name = nil
-        expect(subject).to_not be_valid
+      subject.name = nil
+      expect(subject).to_not be_valid
     end
 
     it 'should be an integer' do
-        subject.posts_counter = 0
-        expect(subject.posts_counter).to be_a(Integer) 
+      subject.posts_counter = 0
+      expect(subject.posts_counter).to be_a(Integer)
     end
   end
 
@@ -35,6 +35,4 @@ RSpec.describe User, type: :model do
       expect(subject.three_recent_posts.count).to eq(3)
     end
   end
-
-
 end
