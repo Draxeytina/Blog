@@ -12,6 +12,7 @@ AllCops:
     - "config.ru"
     - "node_modules/**/*"
     - "spec/spec_helper.rb"
+    - "spec/helpers/**"
     - "spec/rails_helper.rb"
 
   DisplayCopNames: true
