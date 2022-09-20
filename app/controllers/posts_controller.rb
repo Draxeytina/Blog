@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  def id
+  def index
   end
 
   def show
