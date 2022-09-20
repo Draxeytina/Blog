@@ -7,14 +7,14 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status(:success)
     end
 
-      it 'should render index template' do
-        get users_path
-        expect(response).to render_template('index')
+    it 'should render index template' do
+      get users_path
+      expect(response).to render_template('index')
     end
 
     it 'should render text in template' do
-        get users_path
-        expect(response.body).to include('Users#id')
+      get users_path
+      expect(response.body).to include('Users#id')
     end
   end
 
@@ -30,8 +30,8 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'should render correct text in template' do
-        get user_path(1)
-        expect(response.body).to include('Here are the users')
+      get user_path(1)
+      expect(response.body).to include('Here are the users')
     end
   end
 end
