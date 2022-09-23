@@ -13,6 +13,7 @@ AllCops:
     - "node_modules/**/*"
     - "spec/spec_helper.rb"
     - "spec/helpers/**"
+    - "spec/requests/**"
     - "spec/rails_helper.rb"
 
   DisplayCopNames: true
