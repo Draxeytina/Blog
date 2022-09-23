@@ -6,7 +6,13 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @user = @post.author
+    @user = current_user
     @comments = @post.comments.limit(5)
   end
+
+  def new
+    @user = current_user
+    @newPost = Post.new
+  end
+
 end
