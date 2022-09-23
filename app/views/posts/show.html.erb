@@ -1,2 +1,15 @@
-<h1>Posts#show</h1>
-<p>These are the posts</p>
+<div>
+    <h2><%= @post.title %> <%= @post.text %> Comments: <%= @post.comments_counter%> Likes: <%= @post.likes_counter%></h2>
+    <p>The following are comments:</p>
+    <div>
+        <% @comments.each do |comment| %>
+            <li> Username: <%=@user.name%>,  <%= comment.text %> </li>
+        <% end %>
+    </div>
+</div>
+
+<div>
+    <%= link_to users_path(@user) do %>
+        <button>Home</button>
+    <% end %>
+</div>

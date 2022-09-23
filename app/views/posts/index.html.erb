@@ -1,2 +1,18 @@
-<h1>Posts#id</h1>
-<p>Find me in app/views/posts/id.html.erb</p>
+<div>
+    <p><%= image_tag @user.photo%> <%= @user.name %></p>
+    <p>Number of Posts: <%= @user.posts_counter%>
+</div>
+
+<div>
+    <% @posts.each do |post| %>
+        <%= link_to user_post_path(@user, post) do %>
+            <button> <%= post.title %> <%= post.text %> Comments: <%= post.comments_counter%> Likes: <%= post.likes_counter%></button><br>
+        <% end %>
+    <% end %>
+</div>
+
+<div>
+    <%= link_to users_path(@user) do %>
+        <button>Home</button>
+    <% end %>
+</div>

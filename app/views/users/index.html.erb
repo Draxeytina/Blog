@@ -1,2 +1,9 @@
-<h1>Users#id</h1>
-<p>Find me in app/views/users/id.html.erb</p>
+<% @users.each do |user| %>
+  <div>
+    <p><%= image_tag user.photo%> <%= user.name %> - Posts: <%= user.posts_counter%>
+    <%= link_to user_path(user.id) do %>
+    <button>Show</button>
+    <% end %>
+    </p>
+  </div>
+<% end %>
