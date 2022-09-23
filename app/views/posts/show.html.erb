@@ -16,6 +16,12 @@
 </div>
 
 <div>
+    <%=form_with model: @like, :url => user_post_likes_path(@user, @post) do |f|%>
+      <% f.submit 'Like' %>
+    <%end%>
+</div>
+
+<div>
     <%= link_to users_path(@user) do %>
         <button>Home</button>
     <% end %>
