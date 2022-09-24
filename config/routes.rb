@@ -9,10 +9,11 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show] do 
     resources :posts, only: [:index, :show, :new, :create] do
-      post "/likes/:id/like" => "likes#like", as: :likes
-      post "/comments/:id/comment" => "comments#comment", as: :comments
+      post "/likes/:id/like" => "likes#create", as: :likes
+      post "/comments/:id/comment" => "comments#create", as: :comments
     end
   end
   resources :posts, only: [:new, :create]
+  resources :likes, only: [:create]
 
 end
