@@ -9,7 +9,7 @@ class User < ApplicationRecord
   after_initialize :update_counter
 
   def three_recent_posts
-    Post.where(author: self).limit(3)
+    Post.where(author: self).order(updated_at: :desc).limit(3)
   end
 
   def all_user_posts
