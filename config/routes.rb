@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'posts/id'
   # get 'posts/show'
   # get 'users/id'
