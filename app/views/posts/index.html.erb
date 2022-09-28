@@ -1,4 +1,5 @@
 <div>
+    <h1>View All Posts</h1>
     <p><%= image_tag @user.photo%> <%= @user.name %></p>
     <p>Number of Posts: <%= @user.posts_counter%>
 </div>
@@ -12,7 +13,7 @@
 </div>
 
 <div>
-    <%= link_to users_path(@user) do %>
-        <button>Home</button>
+    <%= link_to user_posts_path(@user) do %>
+        <button>Pagination</button>
     <% end %>
 </div>

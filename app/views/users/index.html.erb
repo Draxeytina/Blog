@@ -1,6 +1,11 @@
+<h1>Users</h1>
 <% @users.each do |user| %>
   <div>
-    <p><%= image_tag user.photo%> <%= user.name %> - Posts: <%= user.posts_counter%>
+    <p><%= image_tag user.photo%> 
+    <%= link_to user_path(user.id) do %>
+    <%= user.name %>
+    <% end %>
+     - Posts: <%= user.posts_counter%>
     <%= link_to user_path(user.id) do %>
     <button>Show</button>
     <% end %>

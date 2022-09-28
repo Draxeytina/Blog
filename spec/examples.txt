@@ -1,0 +1,29 @@
+example_id                                  | status | run_time        |
+------------------------------------------- | ------ | --------------- |
+./spec/intergration/post_index_spec.rb[1:1] | passed | 0.04494 seconds |
+./spec/intergration/post_index_spec.rb[1:2] | passed | 0.03345 seconds |
+./spec/intergration/post_index_spec.rb[1:3] | passed | 0.03213 seconds |
+./spec/intergration/post_index_spec.rb[1:4] | passed | 0.03333 seconds |
+./spec/intergration/post_index_spec.rb[1:5] | passed | 0.05847 seconds |
+./spec/intergration/post_index_spec.rb[1:6] | passed | 0.03815 seconds |
+./spec/intergration/post_index_spec.rb[1:7] | passed | 0.07213 seconds |
+./spec/intergration/post_index_spec.rb[1:8] | passed | 0.06555 seconds |
+./spec/intergration/post_index_spec.rb[1:9] | passed | 0.60336 seconds |
+./spec/intergration/post_show_spec.rb[1:1]  | passed | 0.03255 seconds |
+./spec/intergration/post_show_spec.rb[1:2]  | passed | 0.03319 seconds |
+./spec/intergration/post_show_spec.rb[1:3]  | passed | 0.0425 seconds  |
+./spec/intergration/post_show_spec.rb[1:4]  | passed | 0.0395 seconds  |
+./spec/intergration/post_show_spec.rb[1:5]  | passed | 0.04748 seconds |
+./spec/intergration/post_show_spec.rb[1:6]  | passed | 0.03951 seconds |
+./spec/intergration/post_show_spec.rb[1:7]  | passed | 0.03943 seconds |
+./spec/intergration/user_index_spec.rb[1:1] | passed | 0.03768 seconds |
+./spec/intergration/user_index_spec.rb[1:2] | passed | 0.022 seconds   |
+./spec/intergration/user_index_spec.rb[1:3] | passed | 0.04217 seconds |
+./spec/intergration/user_index_spec.rb[1:4] | passed | 0.0416 seconds  |
+./spec/intergration/user_show_spec.rb[1:1]  | passed | 0.023 seconds   |
+./spec/intergration/user_show_spec.rb[1:2]  | passed | 0.0202 seconds  |
+./spec/intergration/user_show_spec.rb[1:3]  | passed | 0.03559 seconds |
+./spec/intergration/user_show_spec.rb[1:4]  | passed | 0.05108 seconds |
+./spec/intergration/user_show_spec.rb[1:5]  | passed | 0.03858 seconds |
+./spec/intergration/user_show_spec.rb[1:6]  | passed | 0.05428 seconds |
+./spec/intergration/user_show_spec.rb[1:7]  | passed | 0.05901 seconds |
