@@ -4,8 +4,11 @@
     <p>Author: <%= @post.author.name %></p>
     <p>Comments:</p>
     <div>
-      <% @post.five_recent_comments.each do |comment| %>
+      <% @post.five_recent_comments.includes(:author).each do |comment| %>
         <li> Username: <%=@user.name%>,  <%= comment.text %> </li>
+        <% if can? :destroy, comment %>
+          <%= button_to 'Delete Comment', user_post_comments_destroy_path(comment.author, @post, comment), method: :delete%>
+        <% end %>
       <% end %>
     </div>
 </div>
@@ -18,6 +21,9 @@
 </div>
 
 <div>
+    <% if can? :destroy, @post %>
+      <%= button_to 'Delete Post', user_post_path(current_user, @post), method: :delete%>
+    <% end %>
     <%=form_with model: @like, :url => user_post_likes_path(@user, @post) do |f|%>
       <% f.submit 'Like' %>
     <%end%>
