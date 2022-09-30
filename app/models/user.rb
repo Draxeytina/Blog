@@ -14,6 +14,12 @@ class User < ApplicationRecord
 
   after_initialize :update_counter, :set_img_tag
 
+  ROLES = %i[admin default].freeze
+
+  def is?(requested_role)
+    role == requested_role.to_s
+  end
+
   def three_recent_posts
     Post.where(author: self).order(updated_at: :desc).limit(3)
   end
