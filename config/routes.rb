@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     resources :posts, only: [:index, :show, :new, :create, :destroy] do
       post "/likes/:id/like" => "likes#create", as: :likes
       post "/comments/:id/comment" => "comments#create", as: :comments
-      # post "/comments/:id/comment" => "comments#destroy", as: :comments_destroy
+      post "/comments/:id/comment" => "comments#destroy", as: :comments_destroy
     end
   end
   resources :posts, only: [:new, :create, :destroy]
