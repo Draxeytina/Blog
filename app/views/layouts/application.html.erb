@@ -13,9 +13,14 @@
   <body>
   <div>
     <%= link_to 'Home', root_path %>
-    <%= link_to 'Create New Post', new_post_path %>
+    <%if user_signed_in?%>
+      <%= link_to 'Create New Post', new_post_path %>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+    <%end%>
   </div>
-    <%= yield %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
   </body>
   <% flash.each do |type, msg| %>
     <div class="alert <%= type %>">
