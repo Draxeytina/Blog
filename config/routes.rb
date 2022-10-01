@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do # /api/v1
       resources :users, only: %i[index show] do # api/v1/users
-        resources :posts, only: %i[index show], format: :json do # api/v1/users/:user_id/posts
+        resources :posts, only: %i[index show], format: :json do # api/v1/users/:user_id/
         end
       end
     end
