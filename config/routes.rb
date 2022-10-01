@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   end
   resources :posts, only: [:new, :create, :destroy]
   resources :likes, only: [:create]
+
+  namespace :api do
+  end
 end
