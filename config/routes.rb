@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do # /api/v1
+      resources :users, only: %i[index show] do # api/v1/users
+      end
     end
   end
 end
